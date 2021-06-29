@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         val result2 = formatter.format(value2)
         val result3 = formatter.format(value3)
 
+        // The results are different between on Android Runtime and on local JVM (Unit test).
         println("MainActivity: result1: $result1") // 0.
         println("MainActivity: result2: $result2") // 0
         println("MainActivity: result3: $result3") // 1
