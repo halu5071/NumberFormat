@@ -24,8 +24,8 @@ class DecimalFormatTestOnAndroidTest {
     fun failed_to_obtain_string_0_from_value_1() {
         val result = formatter.format(value1)
 
-        assertEquals("0", result)       // Failed
-        assertNotEquals("0.", result) // Failed
+        assertEquals("0", result)       // Failed below API 30
+        assertNotEquals("0.", result) // Failed below API 30
     }
 
     @Test
