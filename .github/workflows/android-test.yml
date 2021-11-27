@@ -1,0 +1,12 @@
+name: Android Test
+
+on: pull_request
+
+jobs:
+  android_test:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Echo Hello
+        run: |
+          echo Hello
