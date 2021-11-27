@@ -10,6 +10,9 @@ jobs:
       - name: Echo ANDROID_HOME
         run: |
           echo $ANDROID_HOME
-      - name: ls $ANDROID_HOME
+      - name: ls $ANDROID_HOME/emulator
         run: |
-          ls $ANDROID_HOME
+          ls $ANDROID_HOME/emulator
+      - name: List up AVDs
+        run: |
+          $ANDROID_HOME/emulator/emulator -list-avds
