@@ -10,6 +10,9 @@ jobs:
       - name: Echo ANDROID_HOME
         run: |
           echo $ANDROID_HOME
+      - name: ls $ANDROID_HOME/tools/bin
+        run: |
+          ls $ANDROID_HOME/tools/bin
       - name: ls $ANDROID_HOME/emulator
         run: |
           ls $ANDROID_HOME/emulator
