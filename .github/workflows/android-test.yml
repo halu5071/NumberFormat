@@ -10,3 +10,6 @@ jobs:
       - name: Echo ANDROID_HOME
         run: |
           echo $ANDROID_HOME
+      - name: ls $ANDROID_HOME/system-images
+        run: |
+          ls $ANDROID_HOME/system-images
