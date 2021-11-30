@@ -20,13 +20,13 @@ class DecimalFormatTestOnAndroidTest {
     private val value3 = BigDecimal("1.01234567")
     private val value4 = BigDecimal("1000.001234567")
 
-    @Test
-    fun failed_to_obtain_string_0_from_value_1() {
-        val result = formatter.format(value1)
-
-        assertEquals("0", result)       // Failed below API 30
-        assertNotEquals("0.", result) // Failed below API 30
-    }
+//    @Test
+//    fun failed_to_obtain_string_0_from_value_1() {
+//        val result = formatter.format(value1)
+//
+//        assertEquals("0", result)       // Failed below API 30
+//        assertNotEquals("0.", result) // Failed below API 30
+//    }
 
     @Test
     fun obtain_string_0_from_value_2_as_intended() {
