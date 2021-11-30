@@ -19,7 +19,12 @@ jobs:
       - name: List up AVDs
         run: |
           $ANDROID_HOME/emulator/emulator -list-avds
-      - name: Echo 0
-        run: echo 0
-      - name: Echo 1
-        run: echo 1
+      - name: exit 0
+        run: exit 0
+      - name: Check echo 0
+        run: echo $?
+      - name: exit 1
+        run: exit 1
+      - name: Check echo 1
+        if: always()
+        run: echo $?
